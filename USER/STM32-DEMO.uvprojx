@@ -15,7 +15,7 @@
         <TargetCommonOption>
           <Device>STM32F103C8</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F1xx_DFP.2.0.0</PackID>
+          <PackID>Keil.STM32F1xx_DFP.2.3.0</PackID>
           <PackURL>http://www.keil.com/pack/</PackURL>
           <Cpu>IROM(0x08000000,0x10000) IRAM(0x20000000,0x5000) CPUTYPE("Cortex-M3") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -332,7 +332,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\..\stm32f1\CMSIS;..\USER;..\..\..\stm32f1\FWlib\inc;..\..\..\stm32f1\FWlib\src;..\..\..\stm32f1\eslib;..\..\..\stm32f1\FWlib;..\..\..\stm32f1\MAIN;..\..\..\stm32f1\OS\inc;..\..\..\stm32f1\ESExt</IncludePath>
+              <IncludePath>..\..\..\stm32f1\CMSIS;..\USER;..\..\..\stm32f1\FWlib\inc;..\..\..\stm32f1\FWlib\src;..\..\..\stm32f1\eslib;..\..\..\stm32f1\FWlib;..\..\..\stm32f1\MAIN;..\..\..\stm32f1\OS\inc;..\..\..\stm32f1\ESExt;..\..\..\stm32f1\nnp5cpp\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -805,6 +805,11 @@
               <FileType>5</FileType>
               <FilePath>..\..\..\stm32f1\MAIN\es_board.h</FilePath>
             </File>
+            <File>
+              <FileName>es_board.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\stm32f1\MAIN\es_board.cpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -814,6 +819,81 @@
               <FileName>es_PC13_LED.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>..\..\..\stm32f1\ESExt\es_PC13_LED.cpp</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>nnp5</GroupName>
+          <Files>
+            <File>
+              <FileName>ACKPkg.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\stm32f1\nnp5cpp\src\ACKPkg.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>AT_Matcher.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\stm32f1\nnp5cpp\src\AT_Matcher.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>DataRetrieval.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\stm32f1\nnp5cpp\src\DataRetrieval.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>DRHandler.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\stm32f1\nnp5cpp\src\DRHandler.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>FFMatcher.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\stm32f1\nnp5cpp\src\FFMatcher.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>MatcherBase.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\stm32f1\nnp5cpp\src\MatcherBase.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>pb_common.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\stm32f1\nnp5cpp\src\pb_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>pb_decode.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\stm32f1\nnp5cpp\src\pb_decode.c</FilePath>
+            </File>
+            <File>
+              <FileName>pb_encode.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\stm32f1\nnp5cpp\src\pb_encode.c</FilePath>
+            </File>
+            <File>
+              <FileName>ProtobufPkg.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\stm32f1\nnp5cpp\src\ProtobufPkg.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>RN_Matcher.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\stm32f1\nnp5cpp\src\RN_Matcher.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>stream.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\stm32f1\nnp5cpp\src\stream.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>TransferredPKG.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\stm32f1\nnp5cpp\src\TransferredPKG.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>TransportLayer.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\stm32f1\nnp5cpp\src\TransportLayer.cpp</FilePath>
             </File>
           </Files>
         </Group>
